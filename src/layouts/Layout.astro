@@ -15,6 +15,7 @@ const { title } = Astro.props;
 		<link rel="icon" type="image/svg+xml" href="/favicon.svg" />
 		<meta name="generator" content={Astro.generator} />
 		<title>{title}</title>
+		<link href="https://fonts.cdnfonts.com/css/nimbus-sans-l" rel="stylesheet">
 	</head>
 	<body>
 		<slot />
@@ -33,9 +34,7 @@ const { title } = Astro.props;
 		);
 	}
 	html {
-		font-family: system-ui, sans-serif;
-		background: #13151a;
-		background-size: 224px;
+		font-family: 'Nimbus Sans L', system-ui, sans-serif;
 	}
 	code {
 		font-family:
