@@ -1,6 +1,5 @@
 ---
 import Layout from '../layouts/Layout.astro';
-import Card from '../components/Card.astro';
 import { Image } from "astro:assets"
 import inabitaPortrait from "../assets/inabita_portrait_wide.jpg"
 import inabitaLogo from "../assets/inabita_logo.svg"
@@ -14,7 +13,7 @@ import inabitaLogoSmall from "../assets/inabita_logo_small.png"
       <p class="w-60 lg:w-auto lg:mx-auto lg:text-center mt-3 text-base lg:text-lg leading-4">un laboratorio di ricerca e progettazione sulla rigenerazione territoriale</p>
     </div>
     
-    <Image src={inabitaPortrait} alt="Logo Inabita" class="mt-8" />
+    <Image src={inabitaPortrait} alt="Foto Inabita" class="mt-8" />
     <div class="mx-auto mt-12 lg:text-2xl">
       <p>Inabita è un'associazione che si occupa di ricerca e progettazione per la rigenerazione territoriale, promuovendo un approccio sostenibile e partecipativo.</p><br>
       <p>Lavoriamo a stretto contatto con le istituzioni locali, le associazioni del territorio e la comunità, offrendo servizi di consulenza per la progettazione di spazi pubblici, la riqualificazione di edifici esistenti, la progettazione di parchi e giardini urbani, la valutazione ambientale strategica e la gestione dei servizi e degli spazi pubblici.</p><br>
@@ -36,45 +35,5 @@ import inabitaLogoSmall from "../assets/inabita_logo_small.png"
     width: 800px;
     max-width: calc(100% - 2rem);
     font-size: 20px;
-  }
-  .astro-a {
-    position: absolute;
-    top: -32px;
-    left: 50%;
-    transform: translatex(-50%);
-    width: 220px;
-    height: auto;
-    z-index: -1;
-  }
-  h1 {
-    font-size: 4rem;
-    font-weight: 700;
-    line-height: 1;
-    text-align: center;
-    margin-bottom: 1em;
-  }
-  .instructions {
-    margin-bottom: 2rem;
-    border: 1px solid rgba(var(--accent-light), 25%);
-    background: linear-gradient(rgba(var(--accent-dark), 66%), rgba(var(--accent-dark), 33%));
-    padding: 1.5rem;
-    border-radius: 8px;
-  }
-  .instructions code {
-    font-size: 0.8em;
-    font-weight: bold;
-    background: rgba(var(--accent-light), 12%);
-    color: rgb(var(--accent-light));
-    border-radius: 4px;
-    padding: 0.3em 0.4em;
-  }
-  .instructions strong {
-    color: rgb(var(--accent-light));
-  }
-  .link-card-grid {
-    display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(24ch, 1fr));
-    gap: 2rem;
-    padding: 0;
   }
 </style>
