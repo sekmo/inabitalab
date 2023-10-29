@@ -17,7 +17,6 @@ const { title } = Astro.props;
 		<link rel="icon" type="image/svg+xml" href="/favicon.svg" />
 		<meta name="generator" content={Astro.generator} />
 		<title>{title}</title>
-		<link href="https://fonts.cdnfonts.com/css/nimbus-sans-l" rel="stylesheet">
 	</head>
 	<body>
 		<slot />
@@ -28,6 +27,33 @@ const { title } = Astro.props;
 	</body>
 </html>
 <style is:global>
+  @font-face {
+    font-family: "NimbusSanL";
+    src: url("../assets/fonts/NimbusSanL-Reg.otf") format("truetype");
+    font-weight: normal;
+    font-style: normal;
+  }
+  
+  @font-face {
+    font-family: "NimbusSanL";
+    src: url("../assets/fonts/NimbusSanL-RegIta.otf") format("truetype");
+    font-weight: normal;
+    font-style: italic;
+  }
+  
+  @font-face {
+    font-family: "NimbusSanL";
+    src: url("../assets/fonts/NimbusSanL-Bol.otf") format("truetype");
+    font-weight: bold;
+    font-style: normal;
+  }
+  
+  @font-face {
+    font-family: "NimbusSanL";
+    src: url("../assets/fonts/NimbusSanL-BolIta.otf") format("truetype");
+    font-weight: bold;
+    font-style: italic;
+  }
 	:root {
 		--accent: 136, 58, 234;
 		--accent-light: 224, 204, 250;
@@ -40,7 +66,10 @@ const { title } = Astro.props;
 		);
 	}
 	html {
-		font-family: 'Nimbus Sans L', system-ui, sans-serif;
+		font-family: "NimbusSanL", system-ui, sans-serif;
+	}
+	p {
+		margin-bottom: 1rem;
 	}
 	code {
 		font-family:
