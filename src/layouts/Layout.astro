@@ -1,8 +1,9 @@
 ---
 import { Image } from "astro:assets"
 import inabitaLogoSmall from "../assets/inabita_logo_small.png"
+import Footer from "../components/Footer.astro"
 interface Props {
-	title: string;
+  title: string;
 }
 
 const { title } = Astro.props;
@@ -10,21 +11,24 @@ const { title } = Astro.props;
 
 <!doctype html>
 <html lang="en">
-	<head>
-		<meta charset="UTF-8" />
-		<meta name="description" content="Inabita - un laboratorio di ricerca e progettazione sulla rigenerazione territoriale." />
-		<meta name="viewport" content="width=device-width" />
-		<link rel="icon" type="image/svg+xml" href="/favicon.svg" />
-		<meta name="generator" content={Astro.generator} />
-		<title>{title}</title>
-	</head>
-	<body>
-		<slot />
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="description" content="Inabita - un laboratorio di ricerca e progettazione sulla rigenerazione territoriale." />
+    <meta name="viewport" content="width=device-width" />
+    <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
+    <meta name="generator" content={Astro.generator} />
+    <title>{title}</title>
+  </head>
+  <body>
+    <slot />
     <div class="mx-auto mt-16 mb-8 text-center text-sm xl:text-base">
       <Image src={inabitaLogoSmall} alt="Logo Inabita" class="w-20 xl:w-24 mt-8 mx-auto" />
       <p class="mt-4">Inabita Laboratorio territoriale<br>Piazza Umberto Ⅰ 8, Ripe San Ginesio (MC)<br>P. IVA 02092690433<br><a href="mailto:inabitalab@gmail.com">inabitalab@gmail.com</a></p>
+
+      <Footer />
+      
     </div>
-	</body>
+  </body>
 </html>
 <style is:global>
   @font-face {
@@ -54,35 +58,35 @@ const { title } = Astro.props;
     font-weight: bold;
     font-style: italic;
   }
-	:root {
-		--accent: 136, 58, 234;
-		--accent-light: 224, 204, 250;
-		--accent-dark: 49, 10, 101;
-		--accent-gradient: linear-gradient(
-			45deg,
-			rgb(var(--accent)),
-			rgb(var(--accent-light)) 30%,
-			white 60%
-		);
-	}
-	html {
-		font-family: "NimbusSanL", system-ui, sans-serif;
-	}
-	p {
-		margin-bottom: 1rem;
-	}
-	code {
-		font-family:
-			Menlo,
-			Monaco,
-			Lucida Console,
-			Liberation Mono,
-			DejaVu Sans Mono,
-			Bitstream Vera Sans Mono,
-			Courier New,
-			monospace;
-	}
-	a {
-		text-decoration: underline;
-	}
+  :root {
+    --accent: 136, 58, 234;
+    --accent-light: 224, 204, 250;
+    --accent-dark: 49, 10, 101;
+    --accent-gradient: linear-gradient(
+      45deg,
+      rgb(var(--accent)),
+      rgb(var(--accent-light)) 30%,
+      white 60%
+    );
+  }
+  html {
+    font-family: "NimbusSanL", system-ui, sans-serif;
+  }
+  p {
+    margin-bottom: 1rem;
+  }
+  code {
+    font-family:
+      Menlo,
+      Monaco,
+      Lucida Console,
+      Liberation Mono,
+      DejaVu Sans Mono,
+      Bitstream Vera Sans Mono,
+      Courier New,
+      monospace;
+  }
+  a {
+    text-decoration: underline;
+  }
 </style>
