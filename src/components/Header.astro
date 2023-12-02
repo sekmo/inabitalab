@@ -1,0 +1,16 @@
+---
+import { Image } from "astro:assets"
+import inabitaLogo from "../assets/inabita_logo.svg"
+import Navigation from "../components/Navigation.astro"
+const { activeNav } = Astro.props;
+---
+
+<div class="mt-8 lg:mt-12 flex flex-row">
+  <div class="grow">
+    <a href="/"><Image src={inabitaLogo} alt="Logo Inabita" class="w-48 lg:w-60" /></a>
+  </div>
+  <Navigation activeNav={activeNav} />
+</div>
+<p class="w-[18rem] lg:w-[22rem] mt-1 text-base lg:text-lg leading-4 lg:leading-5">
+  un laboratorio di ricerca e progettazione sulla rigenerazione territoriale
+</p>

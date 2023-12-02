@@ -1,0 +1,19 @@
+---
+const { activeNav } = Astro.props;
+const navigationItemsBaseClass = "px-1 -mt-1 text-lg no-underline hover:underline";
+---
+
+<nav class="ml-5 hidden lg:block">
+  <div class="flex space-x-4">
+    <a href="/" class={`${navigationItemsBaseClass} ${activeNav === "chi-siamo" ? "font-bold" : "font-medium"}`}>Chi siamo</a>
+    <a href="/progetti" class={`${navigationItemsBaseClass} ${activeNav === "progetti" ? "font-bold" : "font-medium"}`}>Progetti</a>
+    <a href="/news" class={`${navigationItemsBaseClass} ${activeNav === "news" ? "font-bold" : "font-medium"}`}>News</a>
+    <a href="/contatti" class={`${navigationItemsBaseClass} ${activeNav === "contatti" ? "font-bold" : "font-medium"}`}>Contatti</a>
+  </div>
+</nav>
+
+<nav class="ml-5 block lg:hidden">
+  <div class="flex space-x-4">
+    <a href="/contatti" class={`${navigationItemsBaseClass} ${activeNav === "news" ? "font-bold" : "font-medium"}`}>MENU</a>
+  </div>
+</nav>

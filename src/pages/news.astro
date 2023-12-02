@@ -3,25 +3,14 @@ import Layout from '../layouts/Layout.astro';
 import { Image } from "astro:assets"
 import inabitaPortrait from "../assets/inabita_portrait_wide.jpg"
 import inabitaLogo from "../assets/inabita_logo.svg"
+import Footer from "../components/Footer.astro"
+import Navigation from "../components/Navigation.astro"
+import Header from "../components/Header.astro"
 ---
 
 <Layout title="Inabita - un laboratorio di ricerca e progettazione sulla rigenerazione territoriale.">
   <main>
-    <div class="mt-8 lg:mt-12 flex flex-row">
-      <div class="grow">
-        <a href="/"><Image src={inabitaLogo} alt="Logo Inabita" class="w-60 lg:w-72" /></a>
-      </div>
-      <nav class="ml-5 hidden md:block">
-        <div class="flex space-x-4">
-          <a href="/" class="px-1 py-1 font-medium text-lg no-underline hover:underline">Chi siamo</a>
-          <a href="/progetti" class="px-1 py-1 font-medium text-lg no-underline hover:underline">Progetti</a>
-          <a href="/news" class="px-1 py-1 font-bold text-lg no-underline hover:underline">News</a>
-          <a href="/contatti" class="px-1 py-1 font-medium text-lg no-underline hover:underline">Contatti</a>
-        </div>
-      </nav>
-    </div>
-    <p class="w-60 lg:w-auto mt-3 text-base lg:text-lg leading-4">un laboratorio di ricerca e progettazione sulla rigenerazione territoriale</p>
-    
+    <Header activeNav="news" />
     <h1 class="mt-8 text-7xl font-bold">News</h1>
     <div class="mx-auto mt-12 lg:text-2xl">
       <p>Un laboratorio per le sfide ambientali, sociali e culturali delle aree interne, immaginando e attuando la loro trasformazione attraverso pratiche collettive di ricerca-azione.</p>
@@ -30,6 +19,7 @@ import inabitaLogo from "../assets/inabita_logo.svg"
     </div>
   </main>
 </Layout>
+<Footer showSocialIcons="true"/>
 <style>
   main {
     margin: auto;
