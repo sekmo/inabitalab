@@ -1,0 +1,41 @@
+---
+import Layout from '../layouts/Layout.astro';
+import { Image } from "astro:assets"
+import inabitaPortrait from "../assets/inabita_portrait_wide.jpg"
+import inabitaLogo from "../assets/inabita_logo.svg"
+import Footer from "../components/Footer.astro"
+import Navigation from "../components/Navigation.astro"
+import Header from "../components/Header.astro"
+---
+
+<Layout title="Inabita - un laboratorio di ricerca e progettazione sulla rigenerazione territoriale.">
+  <main>
+    <Header activeNav="manifesto" />
+    <h1 class="mt-8 text-3xl font-bold">Manifesto</h1>
+    <div class="mx-auto mt-4 lg:mt-8 text-lg lg:text-xl">
+      <p>
+        Inabita è un laboratorio multidisciplinare che opera secondo una serie di principi:
+        <ul class="list-disc list-none">
+          <li>- <strong>Futuro remoto</strong>, proponendosi di guardare avanti, ma con un'attenzione al passato e alle cause costitutive del presente.</li>
+          <li>- <strong>Qualità della vita</strong>, traducendo concetti di altre latitudini come il Buen vivir e Ubuntu, o altre epoche storiche, come Eudaimonia, al contesto europeo e contemporaneo in cui si muove. </li>
+          <li>- <strong>Condivisione</strong>, garantendo un respiro collettivo e conviviale al suo operato.</li>
+          <li>- <strong>Sostenibilità</strong>, navigando l'incertezza di tempi complessi e in cambiamento, punta ad essere un agente trasformativo nel rispetto di principi di precauzione e prevenzione.</li>
+          <li>- <strong>Giustizia socio-ambientale</strong>, in stretta connessione con il precedente, garantendo equità nell'accesso ai benefici socio-ambientali veicolati dal suo operato.</li>
+        </ul>
+      </p>
+      <br>
+      <p>
+        Inabita opera nel <strong>sistema socio-ecologico del paesaggio</strong>, comprendente sia gli elementi e i processi bio-fisici del territorio corrispondente, che le accezioni storico-culturali delle comunità che lo abitano. In tale ambito, innesca processi trasformativi secondo approcci <strong>sperimentali, sistemici e partecipativi</strong>, votati a stimolare la <strong>creatività, l'inclusione e la relazionalità</strong> tramite pratiche di <strong>cura, collaborazione, ascolto e osservazione</strong>.
+      </p>
+      <p>Tali approcci guidano a loro volta l'ideazione e la realizzazione di progetti di <strong>rigenerazione, valorizzazione e recupero</strong> territoriale e culturale, nonché l'organizzazione di attività di <strong>educazione, facilitazione e divulgazione</strong>.</p>
+    </div>
+  </main>
+</Layout>
+<Footer showSocialIcons="true"/>
+<style>
+  main {
+    margin: auto;
+    width: 800px;
+    max-width: calc(100% - 2rem);
+  }
+</style>
