@@ -1,7 +1,9 @@
 ---
+import MobileMenu from "./MobileMenu.astro";
 const { activeNav } = Astro.props;
 const navigationItemsBaseClass = "px-1 -mt-1 text-lg no-underline hover:underline";
 ---
+<MobileMenu activeNav={activeNav} />
 
 <nav class="ml-5 hidden lg:block">
   <div class="flex space-x-4">
@@ -16,6 +18,30 @@ const navigationItemsBaseClass = "px-1 -mt-1 text-lg no-underline hover:underlin
 
 <nav class="ml-5 block lg:hidden">
   <div class="flex space-x-4">
-    <a href="/contatti" class={`${navigationItemsBaseClass} ${activeNav === "news" ? "font-bold" : "font-medium"}`}>MENU</a>
+    <a href="#" class={`mobile_menu_button px-1 -mt-1 text-lg no-underline font-medium`}>MENU</a>
   </div>
 </nav>
+
+<script>
+  function attachMobileMenuEvents() {
+    console.log("script")
+    const mobileMenuButton = document.querySelectorAll("a.mobile_menu_button")[0];
+    const mobileMenuCloseButton = document.querySelectorAll("button.mobile_menu_close_button")[0];
+    const mobileMenu = document.querySelectorAll("div.mobile_menu")[0];
+
+    mobileMenuButton.addEventListener('click', (event) => {
+      console.log("mobileMenuButton.addEventListener")
+      event.preventDefault();
+      mobileMenu.classList.remove('hidden');
+    });
+
+    mobileMenuCloseButton.addEventListener('click', (event) => {
+      console.log("mobileMenuCloseButton.addEventListener")
+      event.preventDefault();
+      mobileMenu.classList.add('hidden');
+    });
+  }
+
+  attachMobileMenuEvents();
+  document.addEventListener("astro:after-swap", attachMobileMenuEvents);
+</script>
