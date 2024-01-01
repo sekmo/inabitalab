@@ -5,7 +5,7 @@ const navigationItemsBaseClass = "px-1 -mt-1 text-lg no-underline hover:underlin
 ---
 <MobileMenu activeNav={activeNav} />
 
-<nav class="ml-5 hidden lg:block">
+<nav class="ml-5 hidden sm:block">
   <div class="flex space-x-4">
     
     <a href="/" class={`${navigationItemsBaseClass} ${activeNav === "home" ? "font-bold" : "font-medium"}`}>Home</a>
@@ -16,7 +16,7 @@ const navigationItemsBaseClass = "px-1 -mt-1 text-lg no-underline hover:underlin
   </div>
 </nav>
 
-<nav class="ml-5 block lg:hidden">
+<nav class="ml-5 block sm:hidden">
   <div class="flex space-x-4">
     <a href="#" class={`mobile_menu_button px-1 -mt-1 text-lg no-underline font-medium`}>MENU</a>
   </div>

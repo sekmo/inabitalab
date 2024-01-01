@@ -1,20 +1,22 @@
 ---
+import { Image } from "astro:assets"
+import inabitaLogo from "../assets/inabita_logo.svg"
 const { activeNav } = Astro.props;
-const navigationItemsBaseClass = "text-black px-1 text-5xl no-underline";
+const navigationItemsBaseClass = "text-black px-1 text-4xl no-underline";
 ---
-<div class="mobile_menu hidden fixed inset-0 bg-white flex items-center justify-center">
+<div class="mobile_menu hidden fixed h-dvh inset-0 bg-white flex items-center justify-center">
   <button class="mobile_menu_close_button absolute top-5 right-5 h-12 w-12">
     <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor" class="stroke-current text-gray-800">
       <path stroke-linecap="square" stroke-linejoin="round" stroke-width="2" d="M6 18L18 6M6 6l12 12" />
     </svg>
   </button>
   <div class="text-white">
-    <ul class="flex flex-col items-center space-y-8 uppercase">
-      <li><a href="/" class={`${navigationItemsBaseClass} ${activeNav === "home" ? "font-bold" : "font-medium"}`}>Home</a></li>
-      <li><a href="/manifesto" class={`${navigationItemsBaseClass} ${activeNav === "manifesto" ? "font-bold" : "font-medium"}`}>Manifesto</a></li>
-      <li><a href="/chi-siamo" class={`${navigationItemsBaseClass} ${activeNav === "chi-siamo" ? "font-bold" : "font-medium"}`}>Chi siamo</a></li>
-      <li><a href="/progetti" class={`${navigationItemsBaseClass} ${activeNav === "progetti" ? "font-bold" : "font-medium"}`}>Progetti</a></li>
-      <li><a href="/servizi" class={`${navigationItemsBaseClass} ${activeNav === "servizi" ? "font-bold" : "font-medium"}`}>Servizi</a></li>
+    <ul class="flex flex-col items-center space-y-8">
+      <li><a href="/" class={`${navigationItemsBaseClass} ${activeNav === "home" ? "font-semibold" : "font-base"}`}>Home</a></li>
+      <li><a href="/manifesto" class={`${navigationItemsBaseClass} ${activeNav === "manifesto" ? "font-semibold" : "font-base"}`}>Manifesto</a></li>
+      <li><a href="/chi-siamo" class={`${navigationItemsBaseClass} ${activeNav === "chi-siamo" ? "font-semibold" : "font-base"}`}>Chi siamo</a></li>
+      <li><a href="/progetti" class={`${navigationItemsBaseClass} ${activeNav === "progetti" ? "font-semibold" : "font-base"}`}>Progetti</a></li>
+      <li><a href="/servizi" class={`${navigationItemsBaseClass} ${activeNav === "servizi" ? "font-semibold" : "font-base"}`}>Servizi</a></li>
     </ul>
   </div>
 </div>

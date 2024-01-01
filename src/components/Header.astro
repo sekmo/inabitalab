@@ -5,12 +5,12 @@ import Navigation from "../components/Navigation.astro"
 const { activeNav } = Astro.props;
 ---
 
-<div class="mt-8 lg:mt-12 flex flex-row">
+<div class="mt-4 lg:mt-12 flex flex-row">
   <div class="grow">
-    <a href="/"><Image src={inabitaLogo} alt="Logo Inabita" class="w-48 lg:w-60" /></a>
+    <a href="/"><Image src={inabitaLogo} alt="Logo Inabita" class="w-40 lg:w-48" /></a>
   </div>
   <Navigation activeNav={activeNav} />
 </div>
-<p class="w-[18rem] lg:w-[22rem] mt-1 text-base lg:text-lg leading-4 lg:leading-5">
-  un laboratorio di ricerca e progettazione sulla rigenerazione territoriale
+<p class="w-[18rem] lg:w-[22rem] mt-1 text-xs sm:text-base leading-3 sm:leading-5">
+  laboratorio di ricerca e progettazione sulla rigenerazione territoriale
 </p>
