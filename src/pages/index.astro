@@ -1,7 +1,7 @@
 ---
 import Layout from '../layouts/Layout.astro';
 import { Image } from "astro:assets"
-import inabitaPortrait from "../assets/inabita_portrait_wide.jpg"
+import homeBlob from "../assets/home_blob.png"
 import Footer from "../components/Footer.astro"
 import Header from "../components/Header.astro"
 ---
@@ -9,7 +9,8 @@ import Header from "../components/Header.astro"
 <Layout title="Inabita - un laboratorio di ricerca e progettazione sulla rigenerazione territoriale.">
   <main>
     <Header activeNav="home" />
-    <Image src={inabitaPortrait} alt="Foto Inabita" class="mt-4 sm:mt-8" />
+    <!-- <div class="flex justify-center"></div> -->
+    <Image src={homeBlob} alt="Inabita società cooperativa" class="mt-4 sm:mt-8 w-full max-w-lg" />
     <div class="mx-auto mt-4 sm:mt-8 text-lg sm:text-xl">
       <p>Un laboratorio per le sfide ambientali, sociali e culturali delle aree interne, immaginando e attuando la loro trasformazione attraverso pratiche collettive di ricerca-azione.</p>
       <p>Una rete orizzontale di ricercatori, pianificatrici, architetti, scienziate ambientali, artisti, che operano attraverso un approccio integrato e partecipativo.</p>
