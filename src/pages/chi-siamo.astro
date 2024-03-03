@@ -10,22 +10,26 @@ import Header from "../components/Header.astro"
   <main>
     <Header activeNav="chi-siamo" />
     <h1 class="mt-8 text-4xl sm:text-5xl font-semibold tracking-tighter">Chi siamo</h1>
+    <Image src={inabitaPortrait} alt="Foto Inabita" class="mt-4 sm:mt-8" />
     <div class="mx-auto mt-2 sm:mt-4 text-lg sm:text-xl">
       <p>
         Inabita è un centro di ricerca sulle sfide ambientali, sociali e culturali delle aree interne, immaginando e attuando la loro trasformazione attraverso pratiche collettive di ricerca-azione.
-        Siamo una rete orizzontale di ricercatori, pianificatrici, architetti, scienziate ambientali, artisti, che operano attraverso un approccio integrato e partecipativo.<br><br>
-        Inabita è più della somma delle sue parti. È un gruppo unito dal condiviso interesse per il comune, inteso come tutto ciò che amalgama le parti nel loro tutto. Il territorio, la sua lingua, la sua cucina, la sua cultura. Inabita sperimenta nell’amalgama di cui si sente parte, attraverso strumenti come l’indagine riflessiva e la partecipazione, occhi critici, ma allo stesso tempo aperti al nuovo e al lontano, corpi mobili, ma legati da rituali di connessione e condivisione.
+        Siamo una rete orizzontale di ricercatori, pianificatrici, architetti, scienziate ambientali, artisti, che operano attraverso un approccio integrato e partecipativo.
       </p>
-
+      <h2 class="mt-8 text-2xl sm:text-3xl font-semibold tracking-tighter">Il CDA di Inabita società cooperativa</h2>
       <div class="mt-8">
-        <h3 class="text-xl font-bold">Fulvia Calcagni </h3>
-        <p>Fulvia nasce a Roma, vive a Barcellona e, da 6 anni, tutte le estati passa per il maceratese. Ondeggia tra l’umanistico e lo scientifico da quando ne ha memoria. Con un diploma classico e una laurea in ingegneria, ha cercato il suo centro all’intersezione tra società e natura con un dottorato in scienze e tecnologie ambientali finalizzato a carpire il valore soggettivo e situato associato alla natura, specialmente urbana. Si interessa di educazione e sociologia ambientale, e crede che la condivisione salverà il mondo. Collabora con Inabita in progetti di comunità educanti e ricerca paesaggistica.</p>
+        <!-- <h3 class="text-xl font-bold">Matteo Giacomelli</h3> -->
+        <p><span class="font-bold">Matteo Giacomelli</span> è presidente di Inabita e ricercatore in urbanistica presso il Dipartimento di Architettura e Studi Urbani del Politecnico di Milano. Nato e cresciuto nel Maceratese, ha conseguito una laurea in Ingegneria Ambientale presso l'Università di Firenze, seguita da una specializzazione alla Aalborg University sugli studi ambientali applicati alla dimensione urbana. Dopo un periodo di ricerca presso l'Università Tecnica di Amburgo nel 2018, torna nelle Marche per svolgere un dottorato in Urbanistica all'Università di Camerino.<br>
+        In qualità di presidente dell'associazione Borgofuturo, ha collaborato all'organizzazione delle edizioni 2020 e 2021. Durante questo periodo, ha coordinato il processo partecipato verso la definizione di QUI Val di Fiastra e condotto ricerche sulle relazioni ecologiche tra aree interne e poli urbani attraverso la lente dei servizi ecosistemici, in collaborazione con il German Centre for Integrative Biodiversity Research (iDiv).</p>
+      </div>
+      <div class="mt-8">
+        <p><span class="font-bold">Fulvia Calcagni</span> è nata e cresciuta a Roma, dove consegue un diploma classico e una laurea in ingegneria per l'Ambiente e il Territorio all'università di Tor Vergata. Successivamente, Fulvia si sposta all'estero per il “Joint Master in Environmental studies – Cities and Sustainability” tra Aalborg, Aveiro, e Barcellona. A Barcellona consegue poi un dottorato all'Istituto di Scienze e Tecnologie Ambientali (ICTA-UAB) sul valore relazionale degli ecosistemi e il ruolo del digitale nella nostra interazione con l'ambiente. Dopo un post-dottorato all'Università Humboldt di Berlino, è ora tornata a Barcellona per proseguire la sua ricerca all'interno del progetto ERC BIG5. Dal 2017 collabora con Borgofuturo, sia nell'organizzazione del Social Camp, un progetto di auto-formazione residenziale, che nelle diverse iniziative di rigenerazione locale (il progetto locale Borgofuturo + e gli Horizon2020 RURITAGE e RURACTIVE).<br>
+        È socia co-fondatrice e membra del CDA di Inabita, con cui collabora in progetti di comunità educanti, progettazione partecipata, innovazione digitale sociale e ricerca paesaggistica.</p>
+      </div>
+      <div class="mt-8">
+        <p><span class="font-bold">Matteo Andrenelli</span> è architetto e co-fondatore di Studio Latte, studio di architettura e design con una forte componente di ricerca sulle pratiche umane, sociali e sulla sostenibilità dei processi e dei materiali. Nato a Macerata, ma ha conseguito la laurea in Architettura presso la TUDelft University of Technology, nei Paesi Bassi, con una tesi sul valore culturale degli archivi e nuove formule spaziali per una fruizione democratica della conoscenza. Il suo interesse per le dinamiche spaziali urbane lo ha portato a lavorare nel team incaricato della stesura del piano della città di Tirana, in Albania, dove ha analizzato l'interdipendenza fra sistemi urbani e rurali e ha definito strategie di rigenerazione per cinque aree della città. In seguito, ha coordinato progetti di rigenerazione per i comuni di Gorla Maggiore e Parabiago in Lombardia.<br>É co-fondatore di Inabita con particolare attenzione ai temi socio-spaziali.</p>
       </div>
 
-      <div class="mt-8">
-        <h3 class="text-xl font-bold">Matteo Giacomelli</h3>
-        <p>Matteo è coordinatore del progetto QUI Val di Fiastra e ricercatore in urbanistica al Politecnico di Milano. Nato e cresciuto nell’Alto Maceratese, si forma tra Firenze e Aalborg in consegue una laurea in Ingegneria Ambientale all’Università di Firenze, seguita dal “Joint Master in Environmental studies – Cities and Sustainability” tra Aalborg e Amburgo. Dopo tre anni ad Amburgo nel 2018 rientra nelle Marche per svolgere un dottorato in urbanistica all’Università di Camerino e da presidente dell’associazione collabora all’organizzazione delle due edizioni di Borgofuturo+ 2020 e 2021. In questi anni porta avanti una una ricerca sulle relazioni ecologiche tra aree interne e poli urbani attraverso la lente dei servizi ecosistemici, in collaborazione con il German Centre for Integrative Biodiversity Research (iDiv).</p>
-      </div>
       
       
     </div>
