@@ -2,54 +2,92 @@
 import Layout from '../layouts/Layout.astro';
 import Header from "../components/Header.astro"
 import Footer from "../components/Footer.astro"
+import { Image } from "astro:assets"
+import osservatorio from "../assets/osservatorio.jpg"
+import errante from "../assets/errante.jpg"
+import educare_al_patrimonio from "../assets/educare_al_patrimonio.jpg"
+import ecosistema_digitale from "../assets/ecosistema_digitale.jpg"
 ---
 
 <Layout title="Inabita - un laboratorio di ricerca e progettazione sulla rigenerazione territoriale.">
   <main>
     <Header activeNav="progetti" />
-    <h1 class="mt-8 text-4xl sm:text-5xl font-semibold tracking-tighter">Progetti</h1>
+    <h1 class="mt-16 text-4xl sm:text-5xl font-semibold tracking-tighter">Progetti</h1>
     <p class="mx-auto mt-2 sm:mt-4 text-lg sm:text-xl">Inabita affianca attività di ricerca e progettazione a interventi di implementazione sul campo, ai fini di supportare le amministrazioni nello sviluppo di strategie territoriali, facilitando il dialogo tra società civile e pubblica amministrazione e creando sinergie tra scienza e politica territoriale.</p>
 
-    <div class="mx-auto mt-4 sm:mt-8 text-lg sm:text-xl">
-      
-      <h2 class="text-2xl sm:text-3xl font-bold">Ricerca</h2>
+    <br>
 
-      <h3 class="mt-4 text-xl sm:text-2xl font-semibold">Osservatorio del paesaggio</h3>
-      <h4 class="text-sm uppercase text-neutral-700 tracking-normal">Ambito territoriale: Regione Marche</h4>
-      <p class="mt-2">Inabita è l'ente coordinatore dell'Osservatorio del Paesaggio, finalizzato ad indagare i paesaggi locali da parte delle comunità e le potenzialità dell'applicazione del frame dei Servizi Ecosistemici nella definizione del paesaggio come sistema socio-ecologico, attraverso attività di ricerca-azione nel caso pilota della Val di Fiastra, al fine della creazione di un Osservatorio del Paesaggio estendibile al territorio delle Marche.</p>
+    <!-- <h3 class="text-lg text-gray-900">Osservatorio del paesaggio</h3> -->
 
-      <h3 class="mt-4 text-xl sm:text-2xl font-semibold">Ecosistema digitale</h3>
-      <h4 class="text-sm uppercase text-neutral-700 tracking-normal">Ambito territoriale: Val di Fiastra</h4>
-      <p class="mt-2">Una piattaforma digitale tramite mappatura delle produzioni e attività della vallata del Fiastra. La piattaforma vuole migliorare la fruizione dei servizi e delle virtù del territorio, accompagnata da uno studio del ruolo del digitale nel rafforzamento della resilienza territoriale.</p>
-
-      <h3 class="mt-4 text-xl sm:text-2xl font-semibold">Educare al patrimonio e al territorio</h3>
-      <h4 class="text-sm uppercase text-neutral-700 tracking-normal">Ambito territoriale: Val di Fiastra</h4>
-      <p class="mt-2">Lavoriamo in collaborazione con le scuole della Val di Fiastra per avvicinare e riconnettere persone di età scolare al proprio territorio, nelle sue componenti naturali quanto culturali e identitarie, attraverso l’apprendimento di valori, pratiche e conoscenze che ne garantiscano la valorizzazione e la preservazione nel tempo.</p>
-
-      <h2 class="mt-10 text-2xl sm:text-3xl font-bold">Pianificazione e Rigenerazione territoriale</h2>
-      <h3 class="mt-4 text-xl sm:text-2xl font-semibold">Percorso mobilità dolce - Anello del Fiastra</h3>
-      <h4 class="text-sm uppercase text-neutral-700 tracking-normal">Ambito territoriale: Val di Fiastra</h4>
-      <p class="mt-2">Insieme all’Associazione Borgofuturo, Inabita lavora alla costruzione dell’Anello del Fiastra, un percorso di trekking culturale che parte dall’Abbadia di Fiastra e incontra i 6 centri storici della Val di Fiastra.</p>
-
-      <h3 class="mt-4 text-xl sm:text-2xl font-semibold">Hub tradizioni 2.0</h3>
-      <h4 class="text-sm uppercase text-neutral-700 tracking-normal">Località: Loro Piceno</h4>
-      <p class="mt-2">Nel cuore della nostra cittadina, l'Hub Tradizioni 2.0 emerge come un epicentro innovativo per la conservazione e la celebrazione del nostro ricco patrimonio culturale. Questo spazio dinamico è progettato per essere un crocevia dove tradizione e tecnologia si fondono, offrendo una piattaforma interattiva e coinvolgente per residenti e visitatori. (TESTO DA FARE)</p>
-
-      <h3 class="mt-4 text-xl sm:text-2xl font-semibold">Hub spazio giovani</h3>
-      <h4 class="text-sm uppercase text-neutral-700 tracking-normal">Località: Colmurano</h4>
-      <p class="mt-2">Nel vivace cuore della nostra cittadina, lo Spazio Giovani si afferma come un hub dinamico e accogliente, dedicato all'espressione, all'apprendimento e all'interazione sociale dei giovani. Questo spazio è pensato per essere un terreno fertile per idee, talenti e incontri, offrendo un ambiente sicuro e stimolante dove i giovani possono crescere e esprimersi liberamente. (TESTO DA FARE)</p>
-
-      <h2 class="mt-10 text-2xl sm:text-3xl font-bold">Formazione e divulgazione</h2>
-      
-      <h3 class="mt-4 text-xl sm:text-2xl font-semibold">Social Camp</h3>
-      <h4 class="text-sm uppercase text-neutral-700 tracking-normal">Località: Ripe San Ginesio</h4>
-      <p class="mt-2">Il Social Camp affronta i temi della sostenibilità a misura di borgo trattati dal festival Borgofuturo, ma lo fa in una forma più intima, partecipativa, conviviale e riflessiva. È quindi uno spazio di condivisione di esperienze e di conoscenze che si intrecciano ai momenti quotidiani della vita collettiva.  (TESTO DA FARE)</p>
-
-      <h3 class="mt-4 text-xl sm:text-2xl font-semibold">Borgofuturo Festival</h3>
-      <h4 class="text-sm uppercase text-neutral-700 tracking-normal">Località: Ripe San Ginesio</h4>
-      <p class="mt-2">Dopo dieci anni, Borgofuturo è ancora un’intuizione, prima ancora che un sistema di pensiero. Per questa ragione, ogni categoria che si tenta di associargli è spesso solidale, ma sempre riduttiva: dal rispetto per l’ambiente, alla tradizione borghigiana, alla sostenibilità nelle sue diverse accezioni. Dell’intuizione, questo progetto conserva tanto la freschezza quanto la tendenza ad evolvere. (TESTO DA FARE)</p>
-
+    <h3 class="mt-4 text-xl sm:text-2xl font-semibold">Osservatorio del paesaggio</h3>
+    <p class="text-gray-900 mt-1"><span class="font-bold">Regione Marche</span> | Ricerca, Pianificazione territoriale, Formazione e promozione culturale</p>
+    <div class="text-lg grid grid-cols-1 sm:grid-rows-1 sm:grid-cols-12 sm:gap-x-6 md:gap-x-8 lg:gap-x-8">
+      <div class="sm:col-span-5 md:row-end-2 md:row-span-2">
+        <div class="aspect-w-1 aspect-h-1 bg-gray-50 rounded-md overflow-hidden">
+          <Image src={osservatorio} alt="Osservatorio" class="object-center object-cover" />
+          <!-- <Image src={errante} alt="Osservatorio" class="object-center object-cover" /> -->
+        </div>
+      </div>
+      <div class="mt-6 sm:col-span-7 sm:mt-0 md:row-end-1">
+        <p class="mt-0">Attraverso attività di ricerca-azione e in collaborazione con l’Università di Bologna, l’Osservatorio del Paesaggio parte dall’analisi archivistica e dei piani e sviluppa attività di mappatura partecipata delle percezioni, dei luoghi di interesse naturalistico e culturale, e degli scenari di futuro.<br><br>
+          Nel caso pilota della Val di Fiastra il lavoro è finalizzato alla produzione di un atlante come strumento per la pianificazione e per l’esplorazione del territorio. Dopo una fase pilota nella Val di Fiastra, il progetto prevede di estendere l’osservatorio al territorio della regione Marche.
+        </p>
+      </div>
     </div>
+
+    <br>
+
+    <h3 class="mt-4 text-xl sm:text-2xl font-semibold">Unità mobile "Errante"</h3>
+    <p class="text-gray-900 mt-1"><span class="font-bold">Val di Fiastra</span> | Formazione e promozione culturale</p>
+    <div class="text-lg grid grid-cols-1 sm:grid-rows-1 sm:grid-cols-12 sm:gap-x-6 md:gap-x-8 lg:gap-x-8">
+      <div class="sm:col-span-5 md:row-end-2 md:row-span-2">
+        <div class="aspect-w-1 aspect-h-1 bg-gray-50 rounded-md overflow-hidden">
+          <Image src={errante} alt="Osservatorio" class="object-center object-cover" />
+        </div>
+      </div>
+      <div class="mt-6 sm:col-span-7 sm:mt-0 md:row-end-1">
+        <p class="mt-0">Il progetto mira alla realizzazione di una Struttura mobile in grado di supportare la produzione di eventi e manifestazioni socio-culturali nel territorio della Val di Fiastra. In collaborazione con la Scuola di Architettura e design dell’Università di Camerino, Errante mira a supportare le attività socio-culturali del territorio e connettere tra loro le associazioni e realtà culturali regionali.<br><br>
+          Messa a disposizione di tutte le associazioni e collettivi che vorranno utilizzarla, essa funge da attivatore culturale, aggregatore sociale e strumento formativo.
+        </p>
+      </div>
+    </div>
+
+    <br>
+
+    <h3 class="mt-4 text-xl sm:text-2xl font-semibold">Educare al patrimonio</h3>
+    <p class="text-gray-900 mt-1"><span class="font-bold">Val di Fiastra</span> | Ricerca, Formazione e promozione culturale</p>
+    <div class="text-lg grid grid-cols-1 sm:grid-rows-1 sm:grid-cols-12 sm:gap-x-6 md:gap-x-8 lg:gap-x-8">
+      <div class="sm:col-span-5 md:row-end-2 md:row-span-2">
+        <div class="aspect-w-1 aspect-h-1 bg-gray-50 rounded-md overflow-hidden">
+          <Image src={educare_al_patrimonio} alt="Osservatorio" class="object-center object-cover" />
+        </div>
+      </div>
+      <div class="mt-6 sm:col-span-7 sm:mt-0 md:row-end-1">
+        <p class="mt-0">In collaborazione con l’Università di Macerata nonché le scuole della Val di Fiastra, l’intervento mira ad avvicinare e riconnettere persone in età scolare al proprio territorio. Tanto nelle sue componenti naturali quanto culturali e identitarie, attraverso l’apprendimento di valori, pratiche e conoscenze che ne garantiscano la valorizzazione e la preservazione nel tempo.
+        </p>
+      </div>
+    </div>
+
+    <br>
+
+    <h3 class="mt-4 text-xl sm:text-2xl font-semibold">Ecosistema digitale</h3>
+    <p class="text-gray-900 mt-1"><span class="font-bold">Val di Fiastra</span> | Ricerca, Formazione e promozione culturale</p>
+    <div class="text-lg grid grid-cols-1 sm:grid-rows-1 sm:grid-cols-12 sm:gap-x-6 md:gap-x-8 lg:gap-x-8">
+      <div class="sm:col-span-5 md:row-end-2 md:row-span-2">
+        <div class="aspect-w-1 aspect-h-1 bg-gray-50 rounded-md overflow-hidden">
+          <Image src={ecosistema_digitale} alt="Osservatorio" class="object-center object-cover" />
+        </div>
+      </div>
+      <div class="mt-6 sm:col-span-7 sm:mt-0 md:row-end-1">
+        <p class="mt-0">L’intervento è finalizzato alla creazione di una piattaforma digitale interattiva costruita attraverso la mappatura delle produzioni e attività della vallata del Fiastra.
+          La piattaforma intende migliorare la fruizione dei servizi e
+          delle virtù del territorio, accompagnata da uno studio del
+          ruolo del digitale nel rafforzamento della resilienza
+          territoriale in collaborazione con l’Università di Bologna.
+        </p>
+      </div>
+    </div>
+
   </main>
 </Layout>
 <Footer showSocialIcons="true"/>
