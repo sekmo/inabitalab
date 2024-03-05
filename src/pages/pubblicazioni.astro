@@ -1,0 +1,35 @@
+---
+import Layout from '../layouts/Layout.astro';
+import Header from "../components/Header.astro"
+import Footer from "../components/Footer.astro"
+import { Image } from "astro:assets"
+import osservatorio from "../assets/osservatorio.jpg"
+import errante from "../assets/errante.jpg"
+import educare_al_patrimonio from "../assets/educare_al_patrimonio.jpg"
+import ecosistema_digitale from "../assets/ecosistema_digitale.jpg"
+---
+
+<Layout title="Inabita - un laboratorio di ricerca e progettazione sulla rigenerazione territoriale.">
+  <main>
+    <Header activeNav="pubblicazioni" />
+    <h1 class="mt-8 sm:mt-16 text-4xl sm:text-5xl font-semibold tracking-tighter">Pubblicazioni</h1>
+    <br>
+    <div>
+      <p><span class="italic">Giacomelli, M., Calcagni, F., Giacomelli, D.</span> - Il ruolo delle pratiche culturali nella coesione territoriale (in revisione) Tracce Urbane. Rivista Italiana Transdisciplinare di Studi Urbani</p>
+      <p><span class="italic">Cirilli, E., Calcagni, F., Giacomelli, M, Nicolini, P.</span> - Educazione biocentrica comunitaria per la tutela dei paesaggi al margine. Proceedings XLIV Conferenza Italiana Di Scienze Regionali (AISRE)</p>
+      <p><span class="italic">Bravaglieri, S., de Luca, C., Calcagni, F., GIacomelli, M. (2023)</span> - Il ruolo degli Osservatori del Paesaggio nella pianificazione. Proceedings XXV Conferenza Società Italiana degli Urbanisti - Transizioni, giustizia spaziale e progetto di territorio</p>
+      <p><span class="italic">Giacomelli, M., Calcagni, F., (2022)</span> - Borgofuturo+. Un progetto locale per le aree interne. Quodlibet, Macerata ISBN 9788822912862 <a target="_blank" href="https://www.quodlibet.it/libro/9788822912862">https://www.quodlibet.it/libro/9788822912862</a></p>
+      <p><span class="italic">Giacomelli, M., Calcagni, F., De Luca, C., Giacomelli, D (2022)</span> - Un processo partecipato per le aree interne. Borgofuturo+ in: Collettivo PRiNT (edited by), AREE INTERNE E COMUNITÀ – Cronache dal cuore dell'Italia, Pacini editore, New Fabric, Pisa. ISBN 979-12-5486-028-1</p>
+      <p><span class="italic">De Luca, C., Tondelli, S., Giacomelli, M., Calcagni, F. (2020)</span> - Communities-based rural regeneration: The experience of “Borgofuturo +” project in Marche Region. Urbanistica Informazioni – special issue. ISSN 0392-5005</p>
+    </div>
+
+  </main>
+</Layout>
+<Footer showSocialIcons="true"/>
+<style>
+  main {
+    margin: auto;
+    width: 800px;
+    max-width: calc(100% - 2rem);
+  }
+</style>
