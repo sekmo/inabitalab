@@ -2,6 +2,11 @@
 export default {
   content: ['./src/**/*.{astro,html,js,jsx,md,mdx,svelte,ts,tsx,vue}'],
   theme: {
+    colors: {
+      'primary': '#f5f5f3',
+      'secondary': '#000000',
+      'accent': '#75fb4c'
+    },
     extend: {},
     fontSize: {
       // this are the tailwind defaults sizes and line heights.
